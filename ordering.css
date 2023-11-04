@@ -1,11 +1,91 @@
 body{
-    background-color: #ef9834;
+    background-color: #E3E7E8;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container{
     width: 1000px;
-    margin: auto;
+    margin-left: 100px;
     transition: 0.5s;
 }
+.banner{
+    background-color:#453E3B
+}
+.header {
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar{
+    width: 85%; 
+    margin: auto; 
+    padding: 35px 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    
+}
+
+.logo{
+    width: 120px; 
+    cursor: pointer; 
+}
+
+.navbar ul li{
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 20px;
+    position: relative;  
+
+}
+
+.H{
+    color: #EF9834; 
+    font-family: 'Michroma', sans-serif;
+}  
+
+.O{
+    color: #EA7933;
+    font-family: 'Michroma', sans-serif;
+}
+
+.M{
+    color: #E55A32;
+    font-family: 'Michroma', sans-serif;
+}
+
+.C{
+    color: #E03C31;
+    font-family: 'Michroma', sans-serif;
+}
+
+.CU{
+    color: white; 
+    font-family: 'Michroma', sans-serif;
+}
+.navbar ul li a{
+    text-decoration: none; 
+    text-transform: uppercase; 
+
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px; 
+    width: 0;
+    background: #EF9834;
+    position: absolute; 
+    left: 0; 
+    bottom: -10px; 
+    transition: 0.5s; 
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.page-title {
+    color:#000000;
+}
+
 header{
     display: grid;
     grid-template-columns: 1fr 50px;
@@ -16,7 +96,7 @@ header .shopping{
     text-align: right;
 }
 header .shopping img{
-    width: 60px;
+    width: 40px;
 }
 header .shopping span{
     background: red;
@@ -62,22 +142,17 @@ header .shopping span{
     padding: 10px;
 }
 .card{
-    position: fixed;
-    top:0;
-    left: 100%;
-    width: 500px;
-    background-color: #453E3B;
-    height: 100vh;
-    transition: 0.5s;
+    float: right;
+    width: 300px;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+    
 }
-.active .card{
-    left: calc(100% - 500px);
-}
-.active .container{
-   transform: translateX(-200px);
-}
+
 .card h1{
-    color: white;
+    color: #E8BC0E;
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
@@ -86,8 +161,7 @@ header .shopping span{
     align-items: center;
 }
 .card .checkOut{
-    position: absolute;
-    bottom: 0;
+    position: static;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
