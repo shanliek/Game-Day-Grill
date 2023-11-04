@@ -23,32 +23,32 @@ let products = [
     {
         id: 2,
         name: 'BBQ Pulled Pork Sandwich',
-        image: '',
+        image: 'images/classic.png',
         price: 11.99
     },
     {
         id: 3,
         name: 'Spicy Chicken Wings',
-        image: '',
+        image: 'images/classic.png',
         price: 12.99
     },
     {
         id: 4,
         name: 'Grilled Steak Tacos',
-        image: '',
+        image: 'images/classic.png',
         price: 13.99
     },
     {
         id: 5,
-        name: '',
-        image: '',
-        price: 14.99
+        name: 'PRODUCT NAME 5',
+        image: 'images/classic.png ',
+        price: 320000
     },
     {
         id: 6,
-        name: '',
+        name: 'PRODUCT NAME 6',
         image: '',
-        price: 16.99
+        price: 120000
     }
 ];
 let listCards  = [];
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="images/${value.image}"/></div>
+               <div><img src="images/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
