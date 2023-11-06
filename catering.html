@@ -4,59 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< Updated upstream
-    <link href="catering.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="catering.css">
 
     <!-- Michroma fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <div class="navbar">
         <a href="home.html"><img src="images/logo1.png" class="logo"></a>
         <ul class="nav-menu">
             <li><a href="home.html"><span class="H">Home</span></a></li>
-            <li><a href="reservation.html"><span class="R">Reservation</span></a></li>
             <li><a href="ordering.html"><span class="O">Ordering</span></a></li>
             <li><a href="catering.html"><span class="C">Catering</span></a></li>
             <li><a href="contact.html"><span class="CU">Contact Us</span></a></li>
 
         </ul>
     </div>
-    <h1>Hi</h1>
-=======
-    <link rel="stylesheet" href="catering.css">
-</head>
-<body>
-    <div clas="bnr1">
-         <img src="images/Game-night-mondays.png">
-         <div class="text-box">
-               <h1>Game Night Mondays</h1>
-               <span></span>
-               <p>Join us for Game Day Mondays and score big with 25% OFF on all food and drinks!</p>
-         </div>
-    </div>
-    <div clas="bnr2">
-        <img src="images/game day reservation.png">
-        <div class="text-box">
-              <h1>Game Night Mondays</h1>
-              <span></span>
-              <p>Our Giant Tv rooms are tailor-made for sports lovers like YOU! catch all the action, cheer for your teams, and savor our mouthwatering grilling delights</p>
+    <div class="container">
+        <div id="slide">
+            <div class="item" style="background-image: url(images/slide1.png);">
+                <div class="content">
+                    <div class="name"><span class="E">Game Night Mondays</span></div>
+                    <div class="des">Join us for Game Day Mondays and score  big with 25% OFF on all food and drinks!</div>
+                    <a href="home.html#rsv"><button>Reserve Now!</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/slide2.png);">
+                <div class="content">
+                    <div class="name"><span class="G">Game Night Mondays</span></div>
+                    <div class="des">Our GIANT TV rooms are tailor made for sports lovers like YOU! Catch all the action, cheer for your favorite teams, and savor our mouthwatering grilling delights</div>
+                    <a href="home.html#rsv"><button>Reserve Now!</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/slide3.png);">
+                <div class="content">
+                    <div class="name">Special Game Menu</div>
+                    <div class="des">Enjoy exclusive menu items!
+                    </div>
+                    <a href="home.html#rsv"><button>Reserve Now!</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/slide4.png);">
+                <div class="content">
+                    <div class="name"><span class="G">Grillimpics</span></div>
+                    <div class="des"><span class="G">Join us for the ultimate culinary showdown where you'll gow spatula to spatula in a series of mini games, putting your grilling skills to the test</span></div>
+                    <a href="home.html#rsv"><button>Reserve Now!</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/slide5.png);">
+                <div class="content">
+                    <div class="name">Fanatic Costume Parties</div>
+                    <div class="des">Dress up as your favorite costume parties, with prizes for the best costumes.</div>
+                    <button>TBD</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images/slide6.png);">
+                <div class="content">
+                    <div class="name">Cooking Competitions</div>
+                    <div class="des">Are you ready to grill and thrill your way to gold?</div>
+                    <button>TBD</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
         </div>
     </div>
-    <div clas="bnr3">
-        <img src="images/Grill.png">
-        <div class="text-box">
-              <h1>Gril-lympicss</h1>
-              <span></span>
-              <p>Join us for the ultimate culinary showdown where you'll go spatula to spatula in a series of mini games, putting your grilling skills to the test. Are you ready to grill and thrill your way to gold?</p>
-        </div>
-   </div>
-  
 
-   
-
->>>>>>> Stashed changes
+    <script src="catering.js"></script>
 </body>
 </html>
