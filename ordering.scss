@@ -1,5 +1,8 @@
 @import "navbar.css";
-
+$yellow: #EF9834;
+$orange: #EA7933;
+$orange-red: #E55A32;
+$red: #E03C31;
 body{
     background-color: #E3E7E8;
     font-family: Arial, Helvetica, sans-serif;
@@ -208,7 +211,7 @@ header .shopping span{
             cursor: pointer;
         }
         i:hover{
-            background-color:#E55A32 ;
+            background-color: $red;
             color:#E8BC0E;
         }
     }
