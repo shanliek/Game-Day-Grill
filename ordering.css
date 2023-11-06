@@ -1,11 +1,18 @@
+@import "navbar.css";
+
 body{
     background-color: #E3E7E8;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-    width: 1000px;
-    margin-left: 100px;
-    transition: 0.5s;
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+.menu {
+    float: left;
+    margin-left: 50px;
+    
 }
 .banner{
     background-color:#453E3B
@@ -14,75 +21,11 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.navbar{
-    width: 85%; 
-    margin: auto; 
-    padding: 35px 0; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    
-}
-
-.logo{
-    width: 120px; 
-    cursor: pointer; 
-}
-
-.navbar ul li{
-    list-style: none; 
-    display: inline-block; 
-    margin: 0 20px;
-    position: relative;  
-
-}
-
-.H{
-    color: #EF9834; 
-    font-family: 'Michroma', sans-serif;
-}  
-
-.O{
-    color: #EA7933;
-    font-family: 'Michroma', sans-serif;
-}
-
-.M{
-    color: #E55A32;
-    font-family: 'Michroma', sans-serif;
-}
-
-.C{
-    color: #E03C31;
-    font-family: 'Michroma', sans-serif;
-}
-
-.CU{
-    color: white; 
-    font-family: 'Michroma', sans-serif;
-}
-.navbar ul li a{
-    text-decoration: none; 
-    text-transform: uppercase; 
-
-}
-
-.navbar ul li::after{
-    content: '';
-    height: 3px; 
-    width: 0;
-    background: #EF9834;
-    position: absolute; 
-    left: 0; 
-    bottom: -10px; 
-    transition: 0.5s; 
-}
-
-.navbar ul li:hover::after{
-    width: 100%;
-}
 
 .page-title {
+    position: relative;
+    top: 30px;
+    left: 150px;
     color:#000000;
 }
 
@@ -143,8 +86,11 @@ header .shopping span{
 }
 .card{
     float: right;
-    width: 300px;
     background-color: #DCE0E1;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 700px;
+    width: 500px;
     padding: 20px;
     box-shadow: 0 50px 50px #757676;
     letter-spacing: 1px;
@@ -152,8 +98,7 @@ header .shopping span{
 }
 
 .card h1{
-    color: #E8BC0E;
-    font-weight: 100;
+    color: black;
     margin: 0;
     padding: 0 20px;
     height: 80px;
@@ -161,14 +106,17 @@ header .shopping span{
     align-items: center;
 }
 .card .checkOut{
-    position: static;
+    display: flex;
+    margin-bottom: 50px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
 }
 .card .checkOut div{
+    flex-direction: column-reverse;
     background-color: #E8BC0E;
+    margin-top: 5px;
     width: 100%;
     height: 70px;
     display: flex;
@@ -184,10 +132,13 @@ header .shopping span{
 .listCard li{
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
-    color: #fff;
+    color: black;
+    font-weight: 600;
     row-gap: 10px;
 }
 .listCard li div{
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;

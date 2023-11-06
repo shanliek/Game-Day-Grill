@@ -47,7 +47,7 @@ let products = [
     },
     {
         id: 6,
-        name: 'Oven-Baked Ribs',
+        name: 'Ribs',
         image: 'ribs.png',
         price: 16.99
     }
