@@ -1,155 +1,231 @@
 @import "navbar.css";
+body {
+  background-color: #E3E7E8;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-body{
-    background-color: #E3E7E8;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
 }
+
 .menu {
-    float: left;
-    margin-left: 50px;
-    
+  float: left;
+  margin-left: 50px;
 }
-.banner{
-    background-color:#453E3B
+
+.banner {
+  background-color: #453E3B;
 }
+
 .header {
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .page-title {
-    position: relative;
-    top: 30px;
-    left: 150px;
-    color:#000000;
+  position: relative;
+  top: 30px;
+  left: 150px;
+  color: #000000;
 }
 
-header{
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    margin-top: 50px;
-}
-header .shopping{
-    position: relative;
-    text-align: right;
-}
-header .shopping img{
-    width: 40px;
-}
-header .shopping span{
-    background: red;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: absolute;
-    top: -5px;
-    left: 80%;
-    padding: 3px 10px;
-}
-.list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    margin-top: 50px;
-}
-.list .item{
-    text-align: center;
-    background-color: #DCE0E1;
-    padding: 20px;
-    box-shadow: 0 50px 50px #757676;
-    letter-spacing: 1px;
-}
-.list .item img{
-    width: 90%;
-    height: 430px;
-    object-fit: cover;
-}
-.list .item .title{
-    font-weight: 600;
-}
-.list .item .price{
-    margin: 10px;
-}
-.list .item button{
-    background-color: #1C1F25;
-    color: #fff;
-    width: 100%;
-    padding: 10px;
-}
-.card{
-    float: right;
-    background-color: #DCE0E1;
-    margin-right: 50px;
-    margin-left: 50px;
-    height: 700px;
-    width: 500px;
-    padding: 20px;
-    box-shadow: 0 50px 50px #757676;
-    letter-spacing: 1px;
-    
+header {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  margin-top: 50px;
 }
 
-.card h1{
-    color: black;
-    margin: 0;
-    padding: 0 20px;
-    height: 80px;
-    display: flex;
-    align-items: center;
+header .shopping {
+  position: relative;
+  text-align: right;
 }
-.card .checkOut{
-    display: flex;
-    margin-bottom: 50px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
+header .shopping img {
+  width: 40px;
 }
-.card .checkOut div{
-    flex-direction: column-reverse;
-    background-color: #E8BC0E;
-    margin-top: 5px;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    cursor: pointer;
+
+header .shopping span {
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
 }
-.card .checkOut div:nth-child(2){
-    background-color: #1C1F25;
-    color: #fff;
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 50px;
 }
-.listCard li{
-    display: grid;
-    grid-template-columns: 100px repeat(3, 1fr);
-    color: black;
-    font-weight: 600;
-    row-gap: 10px;
+
+.list .item {
+  text-align: center;
+  background-color: #DCE0E1;
+  padding: 20px;
+  box-shadow: 0 50px 50px #757676;
+  letter-spacing: 1px;
 }
-.listCard li div{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.list .item img {
+  width: 90%;
+  height: 430px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.listCard li img{
-    width: 90%;
+
+.list .item .title {
+  font-weight: 600;
 }
-.listCard li button{
-    background-color: #fff5;
-    border: none;
+
+.list .item .price {
+  margin: 10px;
 }
-.listCard .count{
-    margin: 0 10px;
+
+.list .item button {
+  background-color: #1C1F25;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
 }
+
+.card {
+  float: right;
+  background-color: #DCE0E1;
+  margin-right: 50px;
+  margin-left: 50px;
+  height: 700px;
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 50px 50px #757676;
+  letter-spacing: 1px;
+}
+
+.card h1 {
+  color: black;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.card .checkOut {
+  display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+  flex-direction: column-reverse;
+  background-color: #E8BC0E;
+  margin-top: 5px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2) {
+  background-color: #1C1F25;
+  color: #fff;
+}
+
+.listCard li {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: black;
+  font-weight: 600;
+  row-gap: 10px;
+}
+
+.listCard li div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listCard li img {
+  width: 90%;
+}
+
+.listCard li button {
+  background-color: rgba(255, 255, 255, 0.3333333333);
+  border: none;
+}
+
+.listCard .count {
+  margin: 0 10px;
+}
+
+.pop-up #reservation {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: #E55A32;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up #reservation h2, .pop-up #reservation p {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: white;
+  font-family: "Michroma", sans-serif;
+  font-size: 20px;
+}
+.pop-up #reservation button {
+  padding: 0.5rem 2rem;
+  background: transparent;
+  border: 2px solid #EF9834;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  font-family: "Michroma", sans-serif;
+  font-size: 15px;
+}
+.pop-up #reservation button:hover {
+  border: none;
+  color: black;
+  background: #EF9834;
+  z-index: -1;
+}
+.pop-up #reservation i {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #E8BC0E;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.pop-up #reservation i:hover {
+  background-color: #E55A32;
+  color: #E8BC0E;
+}/*# sourceMappingURL=ordering.css.map */
